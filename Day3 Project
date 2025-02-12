@@ -1,0 +1,50 @@
+print("""
+         (
+          )
+     ███████    
+    █████████  
+     ███████   
+      (   )  
+       (_)   
+""")
+print("Welcome to the Alladin and the Princess")
+print("You have to save the princess.")
+choice1 = input('Enter the Castle. You have two options: '
+                '1: Type "sneak" to Sneak through the Window.'
+                '2: Type "fight" to Fight the Guards.').lower()
+if choice1 == "sneak":
+    choice2 = input('You entered quietly.'
+                    'Now you have to face the Sorcerer. You have two options:'
+                    '1: Type "riddle" to solve the Sorcerer\'s Riddle.'
+                    '2: Type "attack" to Attack the Sorcerer').lower()
+    if choice2 == "riddle":
+        print("The sorcerer is defeated")
+        choice3 = input('After defeating sorecer, Jafar appears and transforms into a giant cobra! You have three options:'
+                        '1: Type "lamp" to Use the magic lamp.'
+                        '2: Type "sword" to fight jafar with a sword.'
+                        '2: Type "wish" to trick jafar into making a wish').lower()
+        if choice3 == "wish":
+            print('The player tells Jafar, "If you were truly the most powerful, you wouldn’t need to fight me!'
+                    'Jafar, enraged, wishes to become an all-powerful Genie.'
+                    'This traps him inside the lamp forever,')
+            choice4 = input('The princess is locked in a magic cage with a password. You have tree options:'
+                            '1: Type: "Freedom"'
+                            '2: Type: "Cobra"'
+                            '3: Type: "Darkness"').lower()
+            if choice4 == "freedom":
+                print("The princess is free now, You Win.")
+            else:
+                print("The password is wrong, You are trapped forever")
+        elif choice3 == "lamp":
+            print('Jafar laughs and says, "Fool! I control the lamp now!'
+            'he grows stronger and instantly defeats the player. Game Over.')
+        elif choice3 == "sword":
+            print("Jafar dodges easily and knocks the sword away."
+            "wraps around you and crushes you. Game Over.")
+        else:
+            print("This choice doesn\'t exist. Game Over.")
+    else:
+        print("The sorcerer trapped you with magic. Game Over.")
+
+else:
+    print("The Guards captured you. Game Over")
